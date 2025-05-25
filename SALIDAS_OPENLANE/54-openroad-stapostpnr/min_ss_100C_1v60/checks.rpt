@@ -1,0 +1,270 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= min_ss_100C_1v60 Corner ===================================
+
+Startpoint: _392_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _391_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock core_clock (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.016648    0.000000    0.000000    0.000000 ^ clk (in)
+                                                         clk (net)
+                      0.000882    0.000441    0.000441 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     8    0.079095    0.146816    0.262685    0.263126 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_0_clk (net)
+                      0.146817    0.000798    0.263924 ^ clkbuf_3_6__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     9    0.030745    0.081423    0.272054    0.535978 ^ clkbuf_3_6__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_3_6__leaf_clk (net)
+                      0.081423    0.000294    0.536273 ^ _392_/CLK (sky130_fd_sc_hd__dfrtp_4)
+    16    0.052120    0.224023    1.144554    1.680827 v _392_/Q (sky130_fd_sc_hd__dfrtp_4)
+                                                         gpio_instance_14.enable_reg (net)
+                      0.224023    0.000751    1.681578 v _309_/A_N (sky130_fd_sc_hd__nand2b_1)
+     1    0.004086    0.111737    0.382524    2.064101 v _309_/Y (sky130_fd_sc_hd__nand2b_1)
+                                                         _178_ (net)
+                      0.111737    0.000018    2.064119 v _500_/TE_B (sky130_fd_sc_hd__ebufn_2)
+     5    0.017676    0.158014    0.304148    2.368267 v _500_/Z (sky130_fd_sc_hd__ebufn_2)
+                                                         PIN_DATA[14] (net)
+                      0.158014    0.000202    2.368469 v _293_/A0 (sky130_fd_sc_hd__mux2_1)
+     1    0.002395    0.108898    0.654999    3.023468 v _293_/X (sky130_fd_sc_hd__mux2_1)
+                                                         _119_ (net)
+                      0.108898    0.000022    3.023490 v _391_/D (sky130_fd_sc_hd__dfrtp_1)
+                                              3.023490   data arrival time
+
+                                  3.000000    3.000000   clock core_clock (rise edge)
+                                  0.000000    3.000000   clock source latency
+     1    0.016648    0.000000    0.000000    3.000000 ^ clk (in)
+                                                         clk (net)
+                      0.000882    0.000441    3.000441 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     8    0.079095    0.146816    0.262685    3.263126 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_0_clk (net)
+                      0.146818    0.000880    3.264006 ^ clkbuf_3_1__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     9    0.030501    0.081069    0.271759    3.535765 ^ clkbuf_3_1__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_3_1__leaf_clk (net)
+                      0.081069    0.000186    3.535951 ^ _391_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                                  0.000000    3.535951   clock reconvergence pessimism
+                                 -0.289834    3.246118   library setup time
+                                              3.246118   data required time
+---------------------------------------------------------------------------------------------
+                                              3.246118   data required time
+                                             -3.023490   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.222628   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= min_ss_100C_1v60 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= min_ss_100C_1v60 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 21 unannotated drivers.
+ Pin_Change_Mask[0]
+ Pin_Change_Mask[10]
+ Pin_Change_Mask[11]
+ Pin_Change_Mask[12]
+ Pin_Change_Mask[13]
+ Pin_Change_Mask[1]
+ Pin_Change_Mask[2]
+ Pin_Change_Mask[3]
+ Pin_Change_Mask[4]
+ Pin_Change_Mask[5]
+ Pin_Change_Mask[6]
+ Pin_Change_Mask[7]
+ Pin_Change_Mask[8]
+ Pin_Change_Mask[9]
+ clkload0/Y
+ clkload1/X
+ clkload2/Y
+ clkload3/Y
+ clkload4/X
+ clkload5/Y
+ clkload6/X
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 68 input ports missing set_input_delay.
+  Data_out[0]
+  Data_out[10]
+  Data_out[11]
+  Data_out[12]
+  Data_out[13]
+  Data_out[14]
+  Data_out[15]
+  Data_out[1]
+  Data_out[2]
+  Data_out[3]
+  Data_out[4]
+  Data_out[5]
+  Data_out[6]
+  Data_out[7]
+  Data_out[8]
+  Data_out[9]
+  Enable
+  Function[0]
+  Function[10]
+  Function[11]
+  Function[12]
+  Function[13]
+  Function[14]
+  Function[15]
+  Function[1]
+  Function[2]
+  Function[3]
+  Function[4]
+  Function[5]
+  Function[6]
+  Function[7]
+  Function[8]
+  Function[9]
+  Int_Mask[0]
+  Int_Mask[1]
+  PIN_DATA[0]
+  PIN_DATA[10]
+  PIN_DATA[11]
+  PIN_DATA[12]
+  PIN_DATA[13]
+  PIN_DATA[14]
+  PIN_DATA[15]
+  PIN_DATA[1]
+  PIN_DATA[2]
+  PIN_DATA[3]
+  PIN_DATA[4]
+  PIN_DATA[5]
+  PIN_DATA[6]
+  PIN_DATA[7]
+  PIN_DATA[8]
+  PIN_DATA[9]
+  Pin_Change_Mask[0]
+  Pin_Change_Mask[10]
+  Pin_Change_Mask[11]
+  Pin_Change_Mask[12]
+  Pin_Change_Mask[13]
+  Pin_Change_Mask[14]
+  Pin_Change_Mask[15]
+  Pin_Change_Mask[1]
+  Pin_Change_Mask[2]
+  Pin_Change_Mask[3]
+  Pin_Change_Mask[4]
+  Pin_Change_Mask[5]
+  Pin_Change_Mask[6]
+  Pin_Change_Mask[7]
+  Pin_Change_Mask[8]
+  Pin_Change_Mask[9]
+  reset
+Warning: There are 88 unconstrained endpoints.
+  Data_in[0]
+  Data_in[10]
+  Data_in[11]
+  Data_in[12]
+  Data_in[13]
+  Data_in[14]
+  Data_in[15]
+  Data_in[1]
+  Data_in[2]
+  Data_in[3]
+  Data_in[4]
+  Data_in[5]
+  Data_in[6]
+  Data_in[7]
+  Data_in[8]
+  Data_in[9]
+  IRQ_INT[0]
+  IRQ_INT[1]
+  IRQ_PIN_CHANGE
+  PIN_DATA[0]
+  PIN_DATA[10]
+  PIN_DATA[11]
+  PIN_DATA[12]
+  PIN_DATA[13]
+  PIN_DATA[14]
+  PIN_DATA[15]
+  PIN_DATA[1]
+  PIN_DATA[2]
+  PIN_DATA[3]
+  PIN_DATA[4]
+  PIN_DATA[5]
+  PIN_DATA[6]
+  PIN_DATA[7]
+  PIN_DATA[8]
+  PIN_DATA[9]
+  Pin_out[0]
+  Pin_out[10]
+  Pin_out[11]
+  Pin_out[12]
+  Pin_out[13]
+  Pin_out[14]
+  Pin_out[15]
+  Pin_out[1]
+  Pin_out[2]
+  Pin_out[3]
+  Pin_out[4]
+  Pin_out[5]
+  Pin_out[6]
+  Pin_out[7]
+  Pin_out[8]
+  Pin_out[9]
+  _392_/D
+  _394_/D
+  _395_/D
+  _397_/D
+  _399_/D
+  _400_/D
+  _403_/D
+  _404_/D
+  _407_/D
+  _410_/D
+  _411_/D
+  _413_/D
+  _414_/D
+  _417_/D
+  _418_/D
+  _421_/D
+  _422_/D
+  _425_/D
+  _426_/D
+  _429_/D
+  _430_/D
+  _433_/D
+  _434_/D
+  _437_/D
+  _438_/D
+  _441_/D
+  _442_/D
+  _446_/D
+  _447_/D
+  _450_/D
+  _451_/D
+  _454_/D
+  _455_/D
+  _458_/D
+  _459_/D
+  _462_/D
+  _463_/D

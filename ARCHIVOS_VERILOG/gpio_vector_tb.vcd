@@ -1,0 +1,1758 @@
+$date
+	Thu May 15 16:00:38 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module gpio_vector_tb $end
+$var wire 16 ! PIN_DATA [15:0] $end
+$var wire 16 " Pin_out [15:0] $end
+$var wire 1 # IRQ_PIN_CHANGE $end
+$var wire 2 $ IRQ_INT [1:0] $end
+$var wire 16 % Data_in [15:0] $end
+$var parameter 32 & CLK_PERIOD $end
+$var reg 16 ' Data_out [15:0] $end
+$var reg 1 ( Enable $end
+$var reg 16 ) Function [15:0] $end
+$var reg 2 * Int_Mask [1:0] $end
+$var reg 16 + Pin_Change_Mask [15:0] $end
+$var reg 1 , clk $end
+$var reg 16 - external_pin_data [15:0] $end
+$var reg 16 . external_pin_drive [15:0] $end
+$var reg 1 / reset $end
+$var integer 32 0 j [31:0] $end
+$scope begin pin_model[0] $end
+$var parameter 2 1 i $end
+$upscope $end
+$scope begin pin_model[1] $end
+$var parameter 2 2 i $end
+$upscope $end
+$scope begin pin_model[2] $end
+$var parameter 3 3 i $end
+$upscope $end
+$scope begin pin_model[3] $end
+$var parameter 3 4 i $end
+$upscope $end
+$scope begin pin_model[4] $end
+$var parameter 4 5 i $end
+$upscope $end
+$scope begin pin_model[5] $end
+$var parameter 4 6 i $end
+$upscope $end
+$scope begin pin_model[6] $end
+$var parameter 4 7 i $end
+$upscope $end
+$scope begin pin_model[7] $end
+$var parameter 4 8 i $end
+$upscope $end
+$scope begin pin_model[8] $end
+$var parameter 5 9 i $end
+$upscope $end
+$scope begin pin_model[9] $end
+$var parameter 5 : i $end
+$upscope $end
+$scope begin pin_model[10] $end
+$var parameter 5 ; i $end
+$upscope $end
+$scope begin pin_model[11] $end
+$var parameter 5 < i $end
+$upscope $end
+$scope begin pin_model[12] $end
+$var parameter 5 = i $end
+$upscope $end
+$scope begin pin_model[13] $end
+$var parameter 5 > i $end
+$upscope $end
+$scope begin pin_model[14] $end
+$var parameter 5 ? i $end
+$upscope $end
+$scope begin pin_model[15] $end
+$var parameter 5 @ i $end
+$upscope $end
+$scope module DUT $end
+$var wire 16 A Data_out [15:0] $end
+$var wire 1 ( Enable $end
+$var wire 16 B Function [15:0] $end
+$var wire 2 C IRQ_INT [1:0] $end
+$var wire 2 D Int_Mask [1:0] $end
+$var wire 16 E PIN_DATA [15:0] $end
+$var wire 16 F Pin_Change_Mask [15:0] $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var wire 16 G irq_pin_change_vector [15:0] $end
+$var wire 2 H irq_int_vector [1:0] $end
+$var wire 16 I function_internal [15:0] $end
+$var wire 16 J Pin_out [15:0] $end
+$var wire 1 # IRQ_PIN_CHANGE $end
+$var wire 16 K Data_in [15:0] $end
+$scope begin gpio_pins_0_13[0] $end
+$var parameter 2 L i $end
+$scope module gpio_instance $end
+$var wire 1 M Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 N Function $end
+$var wire 2 O Int_Mask [1:0] $end
+$var wire 1 P PIN_DATA $end
+$var wire 1 Q Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 R Data_in $end
+$var reg 1 S IRQ_INT $end
+$var reg 1 T IRQ_PIN_CHANGE $end
+$var reg 1 U PIN_DATA_prev $end
+$var reg 1 V Pin_out $end
+$var reg 1 W enable_reg $end
+$var reg 1 X function_reg $end
+$var reg 2 Y int_mask_reg [1:0] $end
+$var reg 1 Z irq_detected $end
+$var reg 1 [ pin_change_mask_reg $end
+$var reg 1 \ pin_direction $end
+$var reg 1 ] pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[1] $end
+$var parameter 2 ^ i $end
+$scope module gpio_instance $end
+$var wire 1 _ Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 ` Function $end
+$var wire 2 a Int_Mask [1:0] $end
+$var wire 1 b PIN_DATA $end
+$var wire 1 c Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 d Data_in $end
+$var reg 1 e IRQ_INT $end
+$var reg 1 f IRQ_PIN_CHANGE $end
+$var reg 1 g PIN_DATA_prev $end
+$var reg 1 h Pin_out $end
+$var reg 1 i enable_reg $end
+$var reg 1 j function_reg $end
+$var reg 2 k int_mask_reg [1:0] $end
+$var reg 1 l irq_detected $end
+$var reg 1 m pin_change_mask_reg $end
+$var reg 1 n pin_direction $end
+$var reg 1 o pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[2] $end
+$var parameter 3 p i $end
+$scope module gpio_instance $end
+$var wire 1 q Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 r Function $end
+$var wire 2 s Int_Mask [1:0] $end
+$var wire 1 t PIN_DATA $end
+$var wire 1 u Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 v Data_in $end
+$var reg 1 w IRQ_INT $end
+$var reg 1 x IRQ_PIN_CHANGE $end
+$var reg 1 y PIN_DATA_prev $end
+$var reg 1 z Pin_out $end
+$var reg 1 { enable_reg $end
+$var reg 1 | function_reg $end
+$var reg 2 } int_mask_reg [1:0] $end
+$var reg 1 ~ irq_detected $end
+$var reg 1 !" pin_change_mask_reg $end
+$var reg 1 "" pin_direction $end
+$var reg 1 #" pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[3] $end
+$var parameter 3 $" i $end
+$scope module gpio_instance $end
+$var wire 1 %" Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 &" Function $end
+$var wire 2 '" Int_Mask [1:0] $end
+$var wire 1 (" PIN_DATA $end
+$var wire 1 )" Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 *" Data_in $end
+$var reg 1 +" IRQ_INT $end
+$var reg 1 ," IRQ_PIN_CHANGE $end
+$var reg 1 -" PIN_DATA_prev $end
+$var reg 1 ." Pin_out $end
+$var reg 1 /" enable_reg $end
+$var reg 1 0" function_reg $end
+$var reg 2 1" int_mask_reg [1:0] $end
+$var reg 1 2" irq_detected $end
+$var reg 1 3" pin_change_mask_reg $end
+$var reg 1 4" pin_direction $end
+$var reg 1 5" pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[4] $end
+$var parameter 4 6" i $end
+$scope module gpio_instance $end
+$var wire 1 7" Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 8" Function $end
+$var wire 2 9" Int_Mask [1:0] $end
+$var wire 1 :" PIN_DATA $end
+$var wire 1 ;" Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 <" Data_in $end
+$var reg 1 =" IRQ_INT $end
+$var reg 1 >" IRQ_PIN_CHANGE $end
+$var reg 1 ?" PIN_DATA_prev $end
+$var reg 1 @" Pin_out $end
+$var reg 1 A" enable_reg $end
+$var reg 1 B" function_reg $end
+$var reg 2 C" int_mask_reg [1:0] $end
+$var reg 1 D" irq_detected $end
+$var reg 1 E" pin_change_mask_reg $end
+$var reg 1 F" pin_direction $end
+$var reg 1 G" pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[5] $end
+$var parameter 4 H" i $end
+$scope module gpio_instance $end
+$var wire 1 I" Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 J" Function $end
+$var wire 2 K" Int_Mask [1:0] $end
+$var wire 1 L" PIN_DATA $end
+$var wire 1 M" Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 N" Data_in $end
+$var reg 1 O" IRQ_INT $end
+$var reg 1 P" IRQ_PIN_CHANGE $end
+$var reg 1 Q" PIN_DATA_prev $end
+$var reg 1 R" Pin_out $end
+$var reg 1 S" enable_reg $end
+$var reg 1 T" function_reg $end
+$var reg 2 U" int_mask_reg [1:0] $end
+$var reg 1 V" irq_detected $end
+$var reg 1 W" pin_change_mask_reg $end
+$var reg 1 X" pin_direction $end
+$var reg 1 Y" pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[6] $end
+$var parameter 4 Z" i $end
+$scope module gpio_instance $end
+$var wire 1 [" Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 \" Function $end
+$var wire 2 ]" Int_Mask [1:0] $end
+$var wire 1 ^" PIN_DATA $end
+$var wire 1 _" Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 `" Data_in $end
+$var reg 1 a" IRQ_INT $end
+$var reg 1 b" IRQ_PIN_CHANGE $end
+$var reg 1 c" PIN_DATA_prev $end
+$var reg 1 d" Pin_out $end
+$var reg 1 e" enable_reg $end
+$var reg 1 f" function_reg $end
+$var reg 2 g" int_mask_reg [1:0] $end
+$var reg 1 h" irq_detected $end
+$var reg 1 i" pin_change_mask_reg $end
+$var reg 1 j" pin_direction $end
+$var reg 1 k" pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[7] $end
+$var parameter 4 l" i $end
+$scope module gpio_instance $end
+$var wire 1 m" Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 n" Function $end
+$var wire 2 o" Int_Mask [1:0] $end
+$var wire 1 p" PIN_DATA $end
+$var wire 1 q" Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 r" Data_in $end
+$var reg 1 s" IRQ_INT $end
+$var reg 1 t" IRQ_PIN_CHANGE $end
+$var reg 1 u" PIN_DATA_prev $end
+$var reg 1 v" Pin_out $end
+$var reg 1 w" enable_reg $end
+$var reg 1 x" function_reg $end
+$var reg 2 y" int_mask_reg [1:0] $end
+$var reg 1 z" irq_detected $end
+$var reg 1 {" pin_change_mask_reg $end
+$var reg 1 |" pin_direction $end
+$var reg 1 }" pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[8] $end
+$var parameter 5 ~" i $end
+$scope module gpio_instance $end
+$var wire 1 !# Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 "# Function $end
+$var wire 2 ## Int_Mask [1:0] $end
+$var wire 1 $# PIN_DATA $end
+$var wire 1 %# Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 &# Data_in $end
+$var reg 1 '# IRQ_INT $end
+$var reg 1 (# IRQ_PIN_CHANGE $end
+$var reg 1 )# PIN_DATA_prev $end
+$var reg 1 *# Pin_out $end
+$var reg 1 +# enable_reg $end
+$var reg 1 ,# function_reg $end
+$var reg 2 -# int_mask_reg [1:0] $end
+$var reg 1 .# irq_detected $end
+$var reg 1 /# pin_change_mask_reg $end
+$var reg 1 0# pin_direction $end
+$var reg 1 1# pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[9] $end
+$var parameter 5 2# i $end
+$scope module gpio_instance $end
+$var wire 1 3# Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 4# Function $end
+$var wire 2 5# Int_Mask [1:0] $end
+$var wire 1 6# PIN_DATA $end
+$var wire 1 7# Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 8# Data_in $end
+$var reg 1 9# IRQ_INT $end
+$var reg 1 :# IRQ_PIN_CHANGE $end
+$var reg 1 ;# PIN_DATA_prev $end
+$var reg 1 <# Pin_out $end
+$var reg 1 =# enable_reg $end
+$var reg 1 ># function_reg $end
+$var reg 2 ?# int_mask_reg [1:0] $end
+$var reg 1 @# irq_detected $end
+$var reg 1 A# pin_change_mask_reg $end
+$var reg 1 B# pin_direction $end
+$var reg 1 C# pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[10] $end
+$var parameter 5 D# i $end
+$scope module gpio_instance $end
+$var wire 1 E# Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 F# Function $end
+$var wire 2 G# Int_Mask [1:0] $end
+$var wire 1 H# PIN_DATA $end
+$var wire 1 I# Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 J# Data_in $end
+$var reg 1 K# IRQ_INT $end
+$var reg 1 L# IRQ_PIN_CHANGE $end
+$var reg 1 M# PIN_DATA_prev $end
+$var reg 1 N# Pin_out $end
+$var reg 1 O# enable_reg $end
+$var reg 1 P# function_reg $end
+$var reg 2 Q# int_mask_reg [1:0] $end
+$var reg 1 R# irq_detected $end
+$var reg 1 S# pin_change_mask_reg $end
+$var reg 1 T# pin_direction $end
+$var reg 1 U# pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[11] $end
+$var parameter 5 V# i $end
+$scope module gpio_instance $end
+$var wire 1 W# Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 X# Function $end
+$var wire 2 Y# Int_Mask [1:0] $end
+$var wire 1 Z# PIN_DATA $end
+$var wire 1 [# Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 \# Data_in $end
+$var reg 1 ]# IRQ_INT $end
+$var reg 1 ^# IRQ_PIN_CHANGE $end
+$var reg 1 _# PIN_DATA_prev $end
+$var reg 1 `# Pin_out $end
+$var reg 1 a# enable_reg $end
+$var reg 1 b# function_reg $end
+$var reg 2 c# int_mask_reg [1:0] $end
+$var reg 1 d# irq_detected $end
+$var reg 1 e# pin_change_mask_reg $end
+$var reg 1 f# pin_direction $end
+$var reg 1 g# pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[12] $end
+$var parameter 5 h# i $end
+$scope module gpio_instance $end
+$var wire 1 i# Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 j# Function $end
+$var wire 2 k# Int_Mask [1:0] $end
+$var wire 1 l# PIN_DATA $end
+$var wire 1 m# Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 n# Data_in $end
+$var reg 1 o# IRQ_INT $end
+$var reg 1 p# IRQ_PIN_CHANGE $end
+$var reg 1 q# PIN_DATA_prev $end
+$var reg 1 r# Pin_out $end
+$var reg 1 s# enable_reg $end
+$var reg 1 t# function_reg $end
+$var reg 2 u# int_mask_reg [1:0] $end
+$var reg 1 v# irq_detected $end
+$var reg 1 w# pin_change_mask_reg $end
+$var reg 1 x# pin_direction $end
+$var reg 1 y# pin_value $end
+$upscope $end
+$upscope $end
+$scope begin gpio_pins_0_13[13] $end
+$var parameter 5 z# i $end
+$scope module gpio_instance $end
+$var wire 1 {# Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 |# Function $end
+$var wire 2 }# Int_Mask [1:0] $end
+$var wire 1 ~# PIN_DATA $end
+$var wire 1 !$ Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 "$ Data_in $end
+$var reg 1 #$ IRQ_INT $end
+$var reg 1 $$ IRQ_PIN_CHANGE $end
+$var reg 1 %$ PIN_DATA_prev $end
+$var reg 1 &$ Pin_out $end
+$var reg 1 '$ enable_reg $end
+$var reg 1 ($ function_reg $end
+$var reg 2 )$ int_mask_reg [1:0] $end
+$var reg 1 *$ irq_detected $end
+$var reg 1 +$ pin_change_mask_reg $end
+$var reg 1 ,$ pin_direction $end
+$var reg 1 -$ pin_value $end
+$upscope $end
+$upscope $end
+$scope module gpio_instance_14 $end
+$var wire 1 .$ Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 /$ Function $end
+$var wire 2 0$ Int_Mask [1:0] $end
+$var wire 1 1$ PIN_DATA $end
+$var wire 1 2$ Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 3$ Data_in $end
+$var reg 1 4$ IRQ_INT $end
+$var reg 1 5$ IRQ_PIN_CHANGE $end
+$var reg 1 6$ PIN_DATA_prev $end
+$var reg 1 7$ Pin_out $end
+$var reg 1 8$ enable_reg $end
+$var reg 1 9$ function_reg $end
+$var reg 2 :$ int_mask_reg [1:0] $end
+$var reg 1 ;$ irq_detected $end
+$var reg 1 <$ pin_change_mask_reg $end
+$var reg 1 =$ pin_direction $end
+$var reg 1 >$ pin_value $end
+$upscope $end
+$scope module gpio_instance_15 $end
+$var wire 1 ?$ Data_out $end
+$var wire 1 ( Enable $end
+$var wire 1 @$ Function $end
+$var wire 2 A$ Int_Mask [1:0] $end
+$var wire 1 B$ PIN_DATA $end
+$var wire 1 C$ Pin_Change_Mask $end
+$var wire 1 , clk $end
+$var wire 1 / reset $end
+$var reg 1 D$ Data_in $end
+$var reg 1 E$ IRQ_INT $end
+$var reg 1 F$ IRQ_PIN_CHANGE $end
+$var reg 1 G$ PIN_DATA_prev $end
+$var reg 1 H$ Pin_out $end
+$var reg 1 I$ enable_reg $end
+$var reg 1 J$ function_reg $end
+$var reg 2 K$ int_mask_reg [1:0] $end
+$var reg 1 L$ irq_detected $end
+$var reg 1 M$ pin_change_mask_reg $end
+$var reg 1 N$ pin_direction $end
+$var reg 1 O$ pin_value $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1101 z#
+b1100 h#
+b1011 V#
+b1010 D#
+b1001 2#
+b1000 ~"
+b111 l"
+b110 Z"
+b101 H"
+b100 6"
+b11 $"
+b10 p
+b1 ^
+b0 L
+b1111 @
+b1110 ?
+b1101 >
+b1100 =
+b1011 <
+b1010 ;
+b1001 :
+b1000 9
+b111 8
+b110 7
+b101 6
+b100 5
+b11 4
+b10 3
+b1 2
+b0 1
+b1010 &
+$end
+#0
+$dumpvars
+0O$
+0N$
+0M$
+0L$
+b0 K$
+0J$
+0I$
+0H$
+0G$
+0F$
+0E$
+0D$
+0C$
+zB$
+b0 A$
+0@$
+0?$
+0>$
+0=$
+0<$
+0;$
+b0 :$
+09$
+08$
+07$
+06$
+05$
+04$
+03$
+02$
+z1$
+b0 0$
+0/$
+0.$
+0-$
+0,$
+0+$
+0*$
+b0 )$
+0($
+0'$
+0&$
+0%$
+0$$
+0#$
+0"$
+0!$
+z~#
+b0 }#
+0|#
+0{#
+0y#
+0x#
+0w#
+0v#
+b0 u#
+0t#
+0s#
+0r#
+0q#
+0p#
+0o#
+0n#
+0m#
+zl#
+b0 k#
+0j#
+0i#
+0g#
+0f#
+0e#
+0d#
+b0 c#
+0b#
+0a#
+0`#
+0_#
+0^#
+0]#
+0\#
+0[#
+zZ#
+b0 Y#
+0X#
+0W#
+0U#
+0T#
+0S#
+0R#
+b0 Q#
+0P#
+0O#
+0N#
+0M#
+0L#
+0K#
+0J#
+0I#
+zH#
+b0 G#
+0F#
+0E#
+0C#
+0B#
+0A#
+0@#
+b0 ?#
+0>#
+0=#
+0<#
+0;#
+0:#
+09#
+08#
+07#
+z6#
+b0 5#
+04#
+03#
+01#
+00#
+0/#
+0.#
+b0 -#
+0,#
+0+#
+0*#
+0)#
+0(#
+0'#
+0&#
+0%#
+z$#
+b0 ##
+0"#
+0!#
+0}"
+0|"
+0{"
+0z"
+b0 y"
+0x"
+0w"
+0v"
+0u"
+0t"
+0s"
+0r"
+0q"
+zp"
+b0 o"
+0n"
+0m"
+0k"
+0j"
+0i"
+0h"
+b0 g"
+0f"
+0e"
+0d"
+0c"
+0b"
+0a"
+0`"
+0_"
+z^"
+b0 ]"
+0\"
+0["
+0Y"
+0X"
+0W"
+0V"
+b0 U"
+0T"
+0S"
+0R"
+0Q"
+0P"
+0O"
+0N"
+0M"
+zL"
+b0 K"
+0J"
+0I"
+0G"
+0F"
+0E"
+0D"
+b0 C"
+0B"
+0A"
+0@"
+0?"
+0>"
+0="
+0<"
+0;"
+z:"
+b0 9"
+08"
+07"
+05"
+04"
+03"
+02"
+b0 1"
+00"
+0/"
+0."
+0-"
+0,"
+0+"
+0*"
+0)"
+z("
+b0 '"
+0&"
+0%"
+0#"
+0""
+0!"
+0~
+b0 }
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+zt
+b0 s
+0r
+0q
+0o
+0n
+0m
+0l
+b0 k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+zb
+b0 a
+0`
+0_
+0]
+0\
+0[
+0Z
+b0 Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+zP
+b0 O
+0N
+0M
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+b0 F
+bz E
+b0 D
+b0 C
+b0 B
+b0 A
+bx 0
+1/
+b0 .
+b0 -
+0,
+b0 +
+b0 *
+b0 )
+1(
+b0 '
+b0 %
+b0 $
+0#
+b0 "
+bz !
+$end
+#5000
+1,
+#10000
+0,
+#15000
+1,
+#20000
+0,
+#25000
+1,
+#30000
+0,
+#35000
+1,
+#40000
+0,
+#45000
+1,
+#50000
+0,
+0/
+#55000
+1W
+1i
+1{
+1/"
+1A"
+1S"
+1e"
+1w"
+1+#
+1=#
+1O#
+1a#
+1s#
+1'$
+18$
+1I$
+1,
+#60000
+0,
+#65000
+1,
+#70000
+1@$
+1|#
+1X#
+14#
+1\"
+18"
+1r
+1N
+b1010101001010101 I
+1M
+1_
+1q
+1%"
+17"
+1I"
+1["
+1m"
+1!#
+13#
+1E#
+1W#
+1i#
+1{#
+1.$
+1?$
+0,
+b1111111111111111 '
+b1111111111111111 A
+b1010101001010101 )
+b1010101001010101 B
+0(
+#75000
+1B$
+1P
+1t
+1:"
+1^"
+16#
+1Z#
+1~#
+b1z1z1z1zz1z1z1z1 !
+b1z1z1z1zz1z1z1z1 E
+b0z0z0z0zz0z0z0z0 %
+b0z0z0z0zz0z0z0z0 K
+b1010101001010101 "
+b1010101001010101 J
+zU
+1V
+1]
+1\
+1X
+0W
+zg
+zd
+0i
+zy
+1z
+1#"
+1""
+1|
+0{
+z-"
+z*"
+0/"
+z?"
+1@"
+1G"
+1F"
+1B"
+0A"
+zQ"
+zN"
+0S"
+zc"
+1d"
+1k"
+1j"
+1f"
+0e"
+zu"
+zr"
+0w"
+z)#
+z&#
+0+#
+z;#
+1<#
+1C#
+1B#
+1>#
+0=#
+zM#
+zJ#
+0O#
+z_#
+1`#
+1g#
+1f#
+1b#
+0a#
+zq#
+zn#
+0s#
+z%$
+1&$
+1-$
+1,$
+1($
+0'$
+z6$
+z3$
+08$
+zG$
+1H$
+1O$
+1N$
+1J$
+0I$
+1,
+#80000
+0,
+#85000
+1G$
+1%$
+1_#
+1;#
+1c"
+1?"
+1y
+1U
+1,
+#90000
+0,
+#95000
+1,
+#100000
+0,
+#105000
+1,
+#110000
+0,
+#115000
+1,
+#120000
+11$
+1b
+1("
+0L"
+0p"
+0$#
+0H#
+1l#
+b1111101001011111 !
+b1111101001011111 E
+0,
+b101010110101010 .
+b101101001011010 -
+#125000
+b101000000001010 %
+b101000000001010 K
+16$
+13$
+1q#
+1n#
+0M#
+0J#
+0)#
+0&#
+0u"
+0r"
+0Q"
+0N"
+1-"
+1*"
+1g
+1d
+1,
+#130000
+0,
+#135000
+1,
+#140000
+0,
+#145000
+1,
+#150000
+0,
+#155000
+1,
+#160000
+0,
+#165000
+1,
+#170000
+1/$
+b1110101001010101 I
+0,
+b1110101001010101 )
+b1110101001010101 B
+b10000 0
+#175000
+b1110101001010101 "
+b1110101001010101 J
+17$
+1>$
+1=$
+19$
+1,
+#180000
+0,
+#185000
+1,
+#190000
+0,
+#195000
+1,
+#200000
+x1$
+xB$
+bx11101001011111 !
+bx11101001011111 E
+0/$
+0@$
+b10101001010101 I
+1C$
+12$
+0,
+b1101001011010 -
+b1101010110101010 .
+b1 *
+b1 D
+b1 0$
+b1 A$
+b1100000000000000 +
+b1100000000000000 F
+#205000
+01$
+0B$
+b11101001011111 !
+b11101001011111 E
+b10101001010101 "
+b10101001010101 J
+bx01000000001010 %
+bx01000000001010 K
+xG$
+0H$
+xD$
+0N$
+b1 K$
+1M$
+0J$
+x6$
+07$
+x3$
+0=$
+b1 :$
+1<$
+09$
+1,
+#210000
+0,
+#215000
+b1000000001010 %
+b1000000001010 K
+06$
+03$
+0G$
+0D$
+1,
+#220000
+0,
+#225000
+1,
+#230000
+0,
+#235000
+1,
+#240000
+0,
+#245000
+1,
+#250000
+11$
+b111101001011111 !
+b111101001011111 E
+0,
+b101101001011010 -
+#255000
+b101000000001010 %
+b101000000001010 K
+16$
+1;$
+13$
+1,
+#260000
+0,
+#265000
+1#
+b100000000000000 G
+b1 $
+b1 C
+b1 H
+14$
+15$
+0;$
+1,
+#270000
+0,
+#275000
+0#
+b0 G
+b0 $
+b0 C
+b0 H
+04$
+05$
+1,
+#280000
+0,
+#285000
+1,
+#290000
+0,
+#295000
+1,
+#300000
+0,
+#305000
+1,
+#310000
+0,
+#315000
+1,
+#320000
+1B$
+b1111101001011111 !
+b1111101001011111 E
+0,
+b1101101001011010 -
+#325000
+b1101000000001010 %
+b1101000000001010 K
+1G$
+1L$
+1D$
+1,
+#330000
+0,
+#335000
+1#
+b1000000000000000 G
+b10 $
+b10 C
+b10 H
+1E$
+1F$
+0L$
+1,
+#340000
+0,
+b10 *
+b10 D
+b10 0$
+b10 A$
+#345000
+0#
+b0 G
+b0 $
+b0 C
+b0 H
+0E$
+0F$
+b10 K$
+b10 :$
+1,
+#350000
+0,
+#355000
+1,
+#360000
+0,
+#365000
+1,
+#370000
+0,
+#375000
+1,
+#380000
+0,
+#385000
+1,
+#390000
+01$
+b1011101001011111 !
+b1011101001011111 E
+0,
+b1001101001011010 -
+#395000
+b1001000000001010 %
+b1001000000001010 K
+06$
+1;$
+03$
+1,
+#400000
+0,
+#405000
+1#
+b100000000000000 G
+b1 $
+b1 C
+b1 H
+14$
+15$
+0;$
+1,
+#410000
+z1$
+0B$
+0("
+1L"
+z$#
+zH#
+xZ#
+zl#
+b0z1zxz1z01110111 !
+b0z1zxz1z01110111 E
+0|#
+1j#
+0X#
+1F#
+04#
+1"#
+b1010101010101 I
+0M
+0q
+07"
+0["
+0!#
+0E#
+0i#
+0.$
+0,
+b1010101010101010 .
+b11001100110011 -
+b1010101010101010 '
+b1010101010101010 A
+b101010101010101 )
+b101010101010101 B
+#415000
+0$#
+0H#
+0Z#
+0l#
+0P
+0t
+0:"
+0^"
+b0z10001000100010 !
+b0z10001000100010 E
+b0 "
+b0 J
+0#
+b0 G
+b0z11x01000100010 %
+b0z11x01000100010 K
+b0 $
+b0 C
+b0 H
+0V
+0]
+0z
+0#"
+0-"
+0*"
+0@"
+0G"
+1Q"
+1N"
+0d"
+0k"
+z)#
+10#
+1,#
+0<#
+18#
+0B#
+0>#
+zM#
+1T#
+1P#
+x_#
+0`#
+x\#
+0f#
+0b#
+zq#
+1x#
+1t#
+0&$
+1"$
+0,$
+0($
+z6$
+04$
+05$
+z3$
+0G$
+1L$
+0D$
+1,
+#420000
+0,
+#425000
+1#
+b1000000000000000 G
+b0z11001000100010 %
+b0z11001000100010 K
+b10 $
+b10 C
+b10 H
+1E$
+1F$
+0L$
+x;$
+0q#
+0_#
+0\#
+0M#
+0)#
+0c"
+0?"
+0y
+0U
+1,
+#430000
+0,
+#435000
+0#
+b0 G
+b0 $
+b0 C
+b0 H
+0E$
+0F$
+1,
+#440000
+0,
+#445000
+1,
+#450000
+0,
+#455000
+1,
+#460000
+zP
+zt
+z:"
+z^"
+z$#
+zH#
+zl#
+b0z1z0z1z0z1z0z1z !
+b0z1z0z1z0z1z0z1z E
+b0 %
+b0 K
+b0 K$
+0M$
+0O$
+b0 :$
+0<$
+0;$
+0>$
+06$
+03$
+0-$
+0%$
+0"$
+0t#
+0x#
+0n#
+0g#
+0P#
+0T#
+0C#
+0;#
+08#
+0,#
+00#
+0f"
+0j"
+0Q"
+0N"
+0B"
+0F"
+0|
+0""
+0g
+0d
+0X
+0\
+0,
+1/
+#465000
+1,
+#470000
+0,
+#475000
+1,
+#480000
+0,
+0/
+#485000
+0P
+0t
+0:"
+0^"
+0$#
+0H#
+0l#
+b0z10001000100010 !
+b0z10001000100010 E
+b0z10001000100010 %
+b0z10001000100010 K
+zU
+1\
+1X
+1g
+1d
+zy
+1""
+1|
+z?"
+1F"
+1B"
+1Q"
+1N"
+zc"
+1j"
+1f"
+z)#
+10#
+1,#
+1;#
+18#
+zM#
+1T#
+1P#
+zq#
+1x#
+1t#
+1%$
+1"$
+z6$
+z3$
+b10 :$
+1<$
+b10 K$
+1M$
+1,
+#490000
+0,
+#495000
+x;$
+0q#
+0M#
+0)#
+0c"
+0?"
+0y
+0U
+1,
+#500000
+1|#
+1X#
+14#
+1n"
+1J"
+1&"
+1`
+b11111111111111 I
+1M
+1q
+17"
+1["
+1!#
+1E#
+1i#
+1.$
+0,
+b1111111111111111 '
+b1111111111111111 A
+b1111111111111111 )
+b1111111111111111 B
+#505000
+x("
+xp"
+xZ#
+1P
+1t
+1:"
+1^"
+1$#
+1H#
+1l#
+b0z11x111x111x111 !
+b0z11x111x111x111 E
+b11111111111111 "
+b11111111111111 J
+1V
+1]
+1h
+1o
+1n
+1j
+1z
+1#"
+1."
+15"
+14"
+10"
+1@"
+1G"
+1R"
+1Y"
+1X"
+1T"
+1d"
+1k"
+1v"
+1}"
+1|"
+1x"
+1*#
+11#
+1<#
+1C#
+1B#
+1>#
+1N#
+1U#
+1`#
+1g#
+1f#
+1b#
+1r#
+1y#
+1&$
+1-$
+1,$
+1($
+1,
+#510000
+0,
+#515000
+1q#
+x_#
+1M#
+1)#
+xu"
+1c"
+1?"
+x-"
+1y
+1U
+1,
+#520000
+0,
+#525000
+1,
+#530000
+0,
+#535000
+1,
+#540000
+0,
+#545000
+1,
+#550000
+0,
+1(
+#555000
+zP
+zt
+0("
+z:"
+z^"
+0p"
+z$#
+zH#
+0Z#
+zl#
+b0z1z0z1z0z1z0z1z !
+b0z1z0z1z0z1z0z1z E
+b0 %
+b0 K
+b0 "
+b0 J
+1I$
+03$
+18$
+0"$
+0&$
+1'$
+0r#
+1s#
+0`#
+1a#
+0N#
+1O#
+08#
+0<#
+1=#
+0*#
+1+#
+0v"
+1w"
+0d"
+1e"
+0N"
+0R"
+1S"
+0@"
+1A"
+0."
+1/"
+0z
+1{
+0d
+0h
+1i
+0V
+1W
+1,
+#560000
+0,
+#565000
+1,
+#570000
+0,
+#575000
+1,
+#580000
+0,
+#585000
+1,
+#590000
+0,
+#595000
+1,
+#600000
+0,
+#605000
+1,
+#610000
+0,
+#615000
+1,
+#620000
+0,
+#625000
+1,
+#630000
+0,
+#635000
+1,
+#640000
+0,
+#645000
+1,
+#650000
+0,
+#655000
+1,
+#660000
+0,
+#665000
+1,
+#670000
+0,
+#675000
+1,
+#680000
+0,
+#685000
+1,
+#690000
+0,
+#695000
+1,
+#700000
+0,

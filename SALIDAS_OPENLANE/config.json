@@ -1,0 +1,14 @@
+{
+	"DESIGN_NAME": "gpio_vector",
+	"VERILOG_FILES": ["dir::src/GPIO_Single.v", "dir::src/GPIO_Vector.v"],
+	"CLOCK_PORT": "clk",
+	"FP_PDN_VOFFSET": 7,
+	"FP_PDN_HOFFSET": 7,
+	"FP_PDN_SKIPTRIM": true,
+	"FP_SIZING": "relative",
+	"FP_CORE_UTIL" : 45,
+	"CLOCK_PERIOD": 3,
+	"PNR_SDC_FILE" : "dir::src/counter.sdc",
+	"SIGNOFF_SDC_FILE" : "dir::src/counter.sdc",
+	"SYNTH_STRATEGY": "DELAY 0"
+}
